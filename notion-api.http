@@ -1,0 +1,15 @@
+@notion_token=secret_GDFHk1I1OmJqPsuv2X4VcI2MG5MYLGLZFfevruUgqDV
+@database_id=0ffcfa05d83b4188a71ed62605c5220b
+
+
+https://www.notion.so/0ffcfa05d83b4188a71ed62605c5220b?v=169f31dec5ba4897ada460e8fd8e5f03
+###
+POST https://api.notion.com/v1/databases/{{database_id}}/query HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{notion_token}}
+Notion-Version: 2022-02-22
+Host: api.notion.com
+
+
+{"page_size":100}
